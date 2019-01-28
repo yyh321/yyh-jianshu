@@ -40,7 +40,6 @@ export const NavItem = styled.div `
   &.active {
     color: #ea6f5a;
   }
-
 `
 export const NavSearch = styled.input `
   width:160px;
@@ -81,9 +80,7 @@ export const Button = styled.div `
   text-align:center;
   &.register{
     width:80px;
-    
     margin:9px 5px 0 15px;
-    
     color:#ea6f5a;
     border: 1px solid rgba(236,97,73,.7);
     background-color: transparent;
@@ -94,9 +91,7 @@ export const Button = styled.div `
     color: #fff;
     background-color:#ea6f5a;
   }
-
 `
-
 export const SearchWrapper = styled.div `
   position:relative;
   float:left;
