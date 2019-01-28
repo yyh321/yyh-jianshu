@@ -42,6 +42,7 @@ handleInputBlur (){
           <SearchWrapper>
             <CSSTransition timeout={200} in={this.state.focused} classNames="slide">
               <NavSearch 
+              href="/"
               className={this.state.focused ? 'focused' : ''}
               onFocus={this.handleInputFocus} 
               onBlur = {this.handleInputBlur}
