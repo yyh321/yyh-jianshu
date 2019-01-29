@@ -7,7 +7,8 @@ import {
 } from 'immutable';
 
 const defaultState = fromJS({
-  focused: false
+  focused: false,
+  list: []
 })
 
 export default (state = defaultState, action) => {
@@ -16,6 +17,8 @@ export default (state = defaultState, action) => {
       return state.set('focused', true);
     case constants.FOCUS_BLUR:
       return state.set('focused', false);
+    case constants.GET_LIST_ITEMS:
+      return state.set('list', action.value);
     default:
       return state;
   }
