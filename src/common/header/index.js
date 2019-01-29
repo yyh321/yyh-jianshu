@@ -51,7 +51,7 @@ class Header extends PureComponent {
 
 const mapStateToProps = (state) => {
   return {
-    focused: state.header.focused
+    focused: state.getIn(['header','focused'])//state是一个immutable对象，获取是用get方法,等价下面写法state.get('header').get('focused')
   }
 }
 
