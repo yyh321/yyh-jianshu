@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
 import { createActions } from './store';
-import { toJS } from 'immutable';
+// import { toJS } from 'immutable';
 import {
   HeaderWrapper,
   LogoImg,
@@ -35,7 +35,6 @@ class Header extends PureComponent {
       }
     }
     
-
     if(focused || mouseIn) {
       return (
         <SearchInfo 
