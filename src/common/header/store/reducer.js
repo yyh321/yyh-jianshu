@@ -8,7 +8,10 @@ import {
 
 const defaultState = fromJS({
   focused: false,
-  list: []
+  mouseIn: false,
+  list: [],
+  page: 1,
+  totalPage: 1
 })
 
 export default (state = defaultState, action) => {
@@ -18,7 +21,16 @@ export default (state = defaultState, action) => {
     case constants.FOCUS_BLUR:
       return state.set('focused', false);
     case constants.GET_LIST_ITEMS:
-      return state.set('list', action.value);
+      return state.merge({
+        list: action.value,
+        totalPage: action.totalPage
+      });
+    case constants.MOUSE_ENTER:
+      return state.set('mouseIn', true);
+    case constants.MOUSE_LEAVE:
+      return state.set('mouseIn', false);
+    case constants.CHANGE_PAGE:
+      return state.set('page', action.page);
     default:
       return state;
   }
