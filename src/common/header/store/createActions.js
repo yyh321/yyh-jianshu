@@ -1,7 +1,4 @@
-// import {
-//   FOCUS_SEARCH,
-//   FOCUS_BLUR
-// } from './constants';
+// 从发公共的action,然后将其导出
 
 import * as constants from './constants'
 

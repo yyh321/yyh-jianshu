@@ -1,3 +1,4 @@
+// header模块的reducer统一放在这里管理
 import {
   constants
 } from './index';
