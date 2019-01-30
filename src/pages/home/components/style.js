@@ -39,33 +39,35 @@ export const DownloadWrapper = styled.div`
   box-sizing:border-box;
   width:280px;
   height: 82px;
+  box-sizing:border-box;
   border:1px solid #f0f0f0;
   border-radius:6px;
   background-color: #fff;
-  margin-bottom: 30px;
   padding: 10px 22px;
-`
+  overflow:hidden;
+  margin-top: 10px;
+  .qrcode {
+    width:60px;
+    height:60px;
+    float:left;
+    display:block;
+  }
 
-export const QRCodeImg = styled.img`
-  width:60px;
-  height:60px;
-`
-export const DownloadTitle = styled.span`
-  float:right;
-  font-size:15px;
-  color:#333;
-`
-export const DownloadContent = styled.span`
-  float:right;
-  margin-top: 4px;
-  font-size: 13px;
-  color: #999;
 `
 export const Info = styled.div`
-  overflow:hidden;
-  vertical-align: middle;
-  margin-left: 7px;
-  width:180px;
-  background:red;
+  width:160px;
+  height:62px;
   float:right;
+  padding:12px 0;
+  .download-app {
+    display:block;
+    font-size:15px;
+    color:#333;
+    margin-bottom:8px;
+  }
+  .found-content {
+    display:block;
+    font-size:13px;
+    color:#999;
+  }
 `
