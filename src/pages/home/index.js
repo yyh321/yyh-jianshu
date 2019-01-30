@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+// import { connect } from 'react-redux';
 import List from './components/list';
 import Download from './components/download';
 

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 // list
 export const ListWrapper = styled.div`
   width:625px;
-  /* height:1000px; */
   margin-top:30px;
 `;
 
@@ -14,6 +13,28 @@ export const ListItem = styled.div`
   border-top: 1px solid #f0f0f0;
   box-sizing: border-box;
 `;
+
+export const ListItemWithImg = styled.div`
+  width:625px;
+  height:162px;
+  border-top: 1px solid #f0f0f0;
+  overflow:hidden;
+`
+export const ItemContainer = styled.div`
+  float:left;
+  box-sizing:border-box;
+  width:475px;
+  height:100%;
+  padding:35px 20px 35px 0;
+  box-sizing: border-box;
+`
+export const ItemImg = styled.img`
+  display:block;
+  width:150px;
+  height:100px;
+  margin-top:35px;
+  float:right;
+`
 export const TopicTitle = styled.div`
   margin:-7px 0 4px;
   width:100%;
@@ -22,6 +43,7 @@ export const TopicTitle = styled.div`
   font-weight: 700;
   color:#333;
 `;
+
 export const Content = styled.p`
   width:100%;
   height:48px;
@@ -32,9 +54,7 @@ export const Content = styled.p`
   color:#999;
 `;
 
-
 // download
-
 export const DownloadWrapper = styled.div`
   box-sizing:border-box;
   width:280px;
@@ -52,7 +72,6 @@ export const DownloadWrapper = styled.div`
     float:left;
     display:block;
   }
-
 `
 export const Info = styled.div`
   width:160px;
